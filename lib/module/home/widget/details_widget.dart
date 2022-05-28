@@ -10,6 +10,11 @@ class DetailsWidget extends StatefulWidget {
 class _DetailsWidgetState extends State<DetailsWidget> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Details"),
+      ),
+      body: const Text("data"),
+    );
   }
 }

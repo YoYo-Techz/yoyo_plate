@@ -10,9 +10,7 @@ class HomeModule extends Module {
       ];
   @override
   List<ModularRoute> get routes => [
-        ChildRoute(HomeRoutes.root,
-            child: (context, args) => const HomeWidget()),
-        ChildRoute(HomeRoutes.details,
-            child: (context, args) => const DetailsWidget()),
+        ChildRoute(HomeRoutes.root, child: (_, __) => const HomeWidget()),
+        ChildRoute(HomeRoutes.details, child: (_, __) => const DetailsWidget()),
       ];
 }

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:yoyoplate/app_routes.dart';
+import 'package:yoyoplate/module/auth/auth_module.dart';
+import 'package:yoyoplate/module/home/home_module.dart';
 
 class RouteUtils {
   static void _goNextPage(
@@ -12,7 +14,6 @@ class RouteUtils {
       if (isReplace) {
         Modular.to.pushReplacementNamed(routeName);
       } else if (isReplaceAll) {
-        debugPrint("---------- > remove all   <---------");
         Modular.to.pushNamedAndRemoveUntil(
             routeName, (Route<dynamic> route) => false);
       } else {
@@ -22,7 +23,6 @@ class RouteUtils {
       if (isReplace) {
         Modular.to.pushReplacementNamed(routeName, arguments: args);
       } else if (isReplaceAll) {
-        debugPrint("---------- > remove all   <---------");
         Modular.to.pushNamedAndRemoveUntil(
             routeName, (Route<dynamic> route) => false);
       } else {
@@ -47,5 +47,23 @@ class RouteUtils {
         routeName: "${AppRoutes.home}$routeName",
         args: args!,
         isReplace: isReplace ?? false);
+  }
+
+    static void changeRoute<M extends Module>(String route,
+      {Object? args, bool? isReplace, bool? isReplaceAll}) {
+    String tempRoute = "";
+    switch (M) {
+      case AuthModule:
+        tempRoute = AppRoutes.auth;
+        break;
+      case HomeModule:
+        tempRoute = AppRoutes.home;
+        break;
+    }
+    _goNextPage(
+        routeName: "$tempRoute$route",
+        args: args!,
+        isReplace: isReplace ?? false,
+        isReplaceAll: isReplaceAll ?? false);
   }
 }
