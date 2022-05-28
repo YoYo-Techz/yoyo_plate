@@ -8,7 +8,6 @@ class HomeModule extends Module {
   List<Bind> get binds => [
         // Bind((i) => ###### ,
       ];
-
   @override
   List<ModularRoute> get routes => [
         ChildRoute(HomeRoutes.root,
