@@ -1,9 +1,9 @@
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:logger/logger.dart';
-import 'package:yoyoplate/app_routes.dart';
-import 'package:yoyoplate/module/home/home_module.dart';
-import 'package:yoyoplate/module/not_found_widget.dart';
-import 'package:yoyoplate/module/splash_widget.dart';
+import 'app_routes.dart';
+import 'module/home/home_module.dart';
+import 'module/not_found_widget.dart';
+import 'module/splash_widget.dart';
 
 import 'guards/auth_guards.dart';
 

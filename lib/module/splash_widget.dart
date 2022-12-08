@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:yoyoplate/module/home/home_module.dart';
-import 'package:yoyoplate/module/home/home_routes.dart';
-import 'package:yoyoplate/utils/route_utils.dart';
-
+import '../utils/route_utils.dart';
+import 'home/home_module.dart';
+import 'home/home_routes.dart';
 class SplashWiget extends StatefulWidget {
   const SplashWiget({Key? key}) : super(key: key);
 
@@ -19,7 +18,8 @@ class _SplashWigetState extends State<SplashWiget> {
 
   _nextRoute() {
     Future.delayed(const Duration(seconds: 3), () {
-      RouteUtils.changeRoute<HomeModule>(HomeRoutes.root, isReplaceAll: true,args: []);
+      RouteUtils.changeRoute<HomeModule>(HomeRoutes.root,
+          isReplaceAll: true, args: []);
     });
   }
 

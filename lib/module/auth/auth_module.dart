@@ -1,8 +1,8 @@
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:yoyoplate/module/auth/auth_route.dart';
-import 'package:yoyoplate/module/auth/widget/auth_widget.dart';
-import 'package:yoyoplate/module/auth/widget/login_widget.dart';
-import 'package:yoyoplate/module/auth/widget/register_widget.dart';
+import 'auth_route.dart';
+import 'widget/auth_widget.dart';
+import 'widget/login_widget.dart';
+import 'widget/register_widget.dart';
 
 class AuthModule extends Module {
   @override

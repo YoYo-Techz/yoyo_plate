@@ -1,7 +1,7 @@
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:yoyoplate/module/home/home_routes.dart';
-import 'package:yoyoplate/module/home/widget/details_widget.dart';
-import 'package:yoyoplate/module/home/widget/home_widget.dart';
+import 'home_routes.dart';
+import 'widget/details_widget.dart';
+import 'widget/home_widget.dart';
 
 class HomeModule extends Module {
   @override

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:yoyoplate/app_routes.dart';
-import 'package:yoyoplate/module/auth/auth_module.dart';
-import 'package:yoyoplate/module/home/home_module.dart';
+import '../app_routes.dart';
+import '../module/auth/auth_module.dart';
+import '../module/home/home_module.dart';
 
 class RouteUtils {
   static void _goNextPage(
@@ -49,7 +49,7 @@ class RouteUtils {
         isReplace: isReplace ?? false);
   }
 
-    static void changeRoute<M extends Module>(String route,
+  static void changeRoute<M extends Module>(String route,
       {Object? args, bool? isReplace, bool? isReplaceAll}) {
     String tempRoute = "";
     switch (M) {
