@@ -19,7 +19,7 @@ class _SplashWigetState extends State<SplashWiget> {
   _nextRoute() {
     Future.delayed(const Duration(seconds: 3), () {
       RouteUtils.changeRoute<HomeModule>(HomeRoutes.root,
-          isReplaceAll: true, args: []);
+          isReplaceAll: true);
     });
   }
 

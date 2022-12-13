@@ -62,7 +62,7 @@ class RouteUtils {
     }
     _goNextPage(
         routeName: "$tempRoute$route",
-        args: args!,
+        args: args,
         isReplace: isReplace ?? false,
         isReplaceAll: isReplaceAll ?? false);
   }
