@@ -1,7 +1,7 @@
 import 'package:chopper/chopper.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:logger/logger.dart';
-import 'package:yoyoplate/config/curl_generator.dart';
+import '../config/curl_generator.dart';
 class LogRequestInterceptor extends RequestInterceptor {
   final Logger logger = Modular.get<Logger>();
 

@@ -2,7 +2,8 @@
 import 'package:built_collection/built_collection.dart';
 import 'package:built_value/serializer.dart';
 import 'package:chopper/chopper.dart';
-import 'package:yoyoplate/config/serializers.dart';
+
+import 'serializers.dart';
 
 /// Converts json to custom built object and vice versa
 class CustomJsonConverter extends JsonConverter {
